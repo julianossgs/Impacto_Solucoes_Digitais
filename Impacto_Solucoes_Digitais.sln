@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impacto_Solucoes_Digitais", "Impacto_Solucoes_Digitais.csproj", "{549D527A-E959-4289-BD7E-F5375371FC73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{549D527A-E959-4289-BD7E-F5375371FC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549D527A-E959-4289-BD7E-F5375371FC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549D527A-E959-4289-BD7E-F5375371FC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549D527A-E959-4289-BD7E-F5375371FC73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96671A99-57E0-4850-BFBB-B79D2404DDCF}
+	EndGlobalSection
+EndGlobal
