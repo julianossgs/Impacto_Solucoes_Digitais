@@ -1,3 +1,13 @@
+
+:root {
+    --color-bg-navbar: #fff;
+    --color-nav-link: #000080;
+    --color-nav-link-hover: #fff;
+    --color-bg-nav-link-hover: #000080;
+    --color-footer: #000033;
+
+}
+
 html {
   font-size: 14px;
 }
@@ -20,3 +30,45 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/*Css navbar*/
+.navbar {
+    
+    background-color: var(--color-bg-navbar);
+   
+}
+
+.nav-link,
+.btn_faleConosco {
+    color: var(--color-nav-link) !important;
+    font-size: 1.2rem;
+}
+
+    .nav-link:hover,
+    .btn_faleConosco:hover{
+        color: var(--color-nav-link-hover) !important;
+        background-color: var(--color-bg-nav-link-hover);
+        border-radius: 5px;
+    }
+
+    /*Css footer*/
+.link_footer {
+    transition: width 1s,transform 1.5s;
+   
+}
+
+    .link_footer:hover {
+        transform: scaleX(1.2);
+        transition-timing-function: ease-in;
+       
+    }
+
+.footer {
+    height: auto;
+    width: 100%;
+    background-color: var(--color-footer);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
