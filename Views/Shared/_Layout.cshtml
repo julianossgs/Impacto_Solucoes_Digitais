@@ -1,44 +1,202 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Impacto_Solucoes_Digitais</title>
+    <meta name="description" content="Site da Soma Soluções Digitais para a venda de sistemas ERP,sites,landing page"/>
+    <meta name="keywords" content="sites,sistemas erp,sistemas financeiros,controle de estoque,controle financeiro
+     para empresas"/>
+    <meta name="author" content="Soma Soluções Digitais"/>
+    <title>@ViewData["Title"] - Soma Solucoes Digitais</title>
+   
+    <link rel="apple-touch-icon" sizes="180x180" href="/Img/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Img/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Img/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/Img/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="/Img/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/Img/Favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/Img/Favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
     <link rel="stylesheet" href="~/Impacto_Solucoes_Digitais.styles.css" asp-append-version="true" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" 
+    rel="stylesheet">
+
+
 </head>
-<body>
+<body style="min-width:375px;">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Impacto_Solucoes_Digitais</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+        <nav class="navbar navbar-expand-lg navbar-toggleable-sm bg-light border-bottom box-shadow mb-3 fixed-top">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img class="img-fluid" src="~/Img/LOGO - SOMA SOLUÇÕES DIGITAIS - PNG.png" alt="Logo" width="180" height="115">
+                </a>
+                <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon text-black"></span>
                 </button>
+                
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    <ul class="navbar-nav flex-grow-1 justify-content-center">
+                        <li class="nav-item mx-2">
+                            <a asp-action="Index" asp-controller="Home" asp-area=""
+                                    class="btn_faleConosco btn btn-link text-decoration-none ps-1">
+                                Home
+                            </a>
+                          
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <li class="nav-item mx-2">
+                           
+                            <a class="nav-link" href="#informacao_itens">Serviços</a>
+                              
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a asp-action="Segmentos" asp-controller="Home" asp-area=""
+                               class="btn_faleConosco btn btn-link text-decoration-none ps-1">
+                                Segmentos
+
+                            </a>
+                          
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a asp-action="sobreNos" asp-controller="Home" asp-area=""
+                                    class="btn_faleConosco btn btn-link text-decoration-none ps-1">
+                                Sobre nós
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#depoimentos">Nossos clientes</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a asp-action="Suporte" asp-controller="Home" asp-area=""
+                               class="btn_faleConosco btn btn-link text-decoration-none ps-1">
+                                Suporte
+                            </a>
+                          
+                               
+                        </li>
+                        <li class="nav-item mx-1">
+                            
+                                <button asp-action="" asp-controller="" asp-area="" type="button"
+                                        class="btn_faleConosco btn btn-link text-decoration-none ps-1">
+                                    Fale Conosco
+                                </button>
+                            
+                               
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
+           
         </main>
     </div>
+   
+    <footer class="border-top text-muted">
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-12 col-md-4 text-center">
+                    <ul class="list-unstyled p-lg-5 p-sm-4">
+                        <li class="pt-5">
+                            <a href="#informacao">
+                                <img class="img-fluid mt-2 bg-light rounded"
+                                     src="/Img/LOGO - SOMA SOLUÇÕES DIGITAIS - PNG.png" style="width:250px" />
+                            </a>
+                        </li>
+                      
+                    </ul>
+                   
+                   
+                </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Impacto_Solucoes_Digitais - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                <div class="col-12 col-md-4 text-center">
+                    <ul class="list-unstyled p-lg-5 p-sm-4">
+                        <li>
+                            <a class="text-light text-decoration-none fs-6">
+                                &copy; 2024 - Soma Soluções Ltda ME
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-light text-decoration-none fs-6">
+                                Rua Marechal Deodoro 91
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-light text-decoration-none fs-6">
+                                São Gonçalo do Sapucaí - MG
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-light text-decoration-none fs-6">
+                                CNPJ 99.999.999/0001-99
+                            </a>
+                        </li>
+                    </ul>
+
+                    
+                    
+
+                   
+                    
+                   
+                </div>
+                <div class="col-12 col-md-4 text-center ">
+                    <ul class="list-unstyled p-lg-5 p-sm-4">
+                        <li class="link_footer">
+                            <a href="#" class="text-decoration-none text-light fs-6">
+
+                                <i class="bi bi-twitter mx-1 text-light fs-5"></i>
+                                somasolucoes@twitter
+
+                            </a>
+                        </li>
+
+                        <li class="link_footer">
+                            <a href="#" class="text-decoration-none link_footer text-light fs-6">
+                                <i class="bi bi-instagram mx-1 text-light fs-5"></i>
+                                somasolucoes@instagram
+                            </a>
+                        </li>
+
+                        <li class="link_footer">
+                            <a href="mailto:email@dominio.com" class="link_footer text-light mx-1 text-decoration-none fs-6">
+                                <i class="bi bi-envelope mx-1 fs-5"></i>
+                                somasolucoes@yahoo.com.br
+                            </a>
+                        </li>
+
+                        <li class="link_footer">
+                            <a href="#" class="mx-1 text-light text-decoration-none fs-6">
+                            <i class="bi bi-whatsapp mx-1"></i>
+                                (35)3241-1198
+                            </a>
+
+                        </li>
+                    </ul>
+
+                    
+
+                   
+                   
+                </div>
+
+            </div>
+
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
