@@ -22,6 +22,11 @@ namespace Impacto_Solucoes_Digitais.Controllers
             return View();
         }
 
+        public IActionResult Segmentos()
+        {
+            return View();
+        }
+
 
     }
 }
