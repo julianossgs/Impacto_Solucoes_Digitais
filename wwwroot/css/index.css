@@ -8,34 +8,25 @@
     --color-bg-suporte:#fff;
     --color-btn-zap:#fff;
     --color-btn-zap-hover:#008000;
-    --color-segmento-item: #000000;
+    --color-btn-segmento:#fff;
+    --color-btn-segmento-hover:#000;
+    --color-segmento-item: #fff;
     --color-info-itens-list: #000099;
     --color-info-itens-list-hover: #000066;
 }
 
-
 /*------Seção Home------*/
 #home {
-    opacity: 1;
-    background-image: url('../Img/LOGO_1 - SOMA SOLUÇÕES DIGITAIS - FUNDO BRANCO.png');
+  
+    background-image:linear-gradient(rgba(0,9,26,0.9),rgba(0,9,26,0.9)),  url('../Img/LOGO_1 - SOMA SOLUÇÕES DIGITAIS - FUNDO BRANCO.png');
     background-position: center;
-    background-size: 100% !important;
+    background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
-    margin: 0;
-    height:auto;
+    height: auto;
+   
 }
 
-.home {
-    background-color: var(--color-bg-home);
-    opacity: 0.8;
-    width: 100%;
-    background-size: 100% !important;
-    background-position: center;
-    margin:0;
-    height:auto;
-    
-}
 
 .segmento {
    
@@ -44,7 +35,14 @@
     animation-timing-function: ease;
 }
 
+.btn_segmento{
+    color:var(--color-btn-segmento) !important;
+}
 
+.btn_segmento:hover{
+
+    color:var(--color-btn-segmento-hover) !important;
+}
 
 .segmento_item {
     color: var(--color-segmento-item);
@@ -181,8 +179,7 @@
     background-position:center;
     background-repeat:no-repeat;
     background-size: 100% !important;
-    background-repeat: no-repeat;
-   
+  
 }
 
 .depoimentos {
