@@ -274,6 +274,82 @@
 }
 
 /*------Fim area suporte------*/
+
+
+
+/*----Area Sistemas------*/
+#sistemas {
+    background-image: url("../Img/informacao.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    height: auto;
+    margin: 0;
+}
+
+.sistemas_show {
+  
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+    height: auto;
+    margin: 0;
+}
+
+.sistemas_show img{
+    width:200px;
+    position:relative;
+}
+
+.sistemas_icons{
+   
+    color:#000033;
+}
+
+.sistemas_text{
+    color:#000033;
+    font-weight:400;
+}
+
+.scale-up-center{
+    -webkit-animation: scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation:progress 2s ease-in-out;
+    animation-delay:0.5s;
+}
+
+
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+/*------Fim area Sistemas------*/
 .titulo_1 {
     animation-name: moverParaDireita;
     animation-duration: 4s;
@@ -521,4 +597,5 @@
 @media (min-width: 1400px) {
     
 }
+
 
