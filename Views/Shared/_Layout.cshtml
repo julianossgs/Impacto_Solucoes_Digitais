@@ -38,68 +38,73 @@
 </head>
 <body style="min-width:375px;">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-toggleable-sm bg-light border-bottom box-shadow mb-3 fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 fixed-top">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <img class="img-fluid" src="~/Img/LOGO - SOMA SOLUÇÕES DIGITAIS - PNG.png" alt="Logo" width="180" height="115">
                 </a>
-                <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon text-black"></span>
+                    <span class="navbar-toggler-icon text-primary"></span>
                 </button>
                 
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1 justify-content-center">
-                        <li class="nav-item mx-2">
+                        <li class="nav-item fs-6">
                             <a asp-action="Index" asp-controller="Home" asp-area=""
-                                    class="btn_faleConosco btn btn-link text-decoration-none ps-1">
+                                    class="btn_faleConosco btn btn-link text-decoration-none pt-2">
                                 Home
                             </a>
                           
                         </li>
-                        <li class="nav-item mx-2">
+                        <li class="nav-item">
                            
-                            <a class="nav-link" href="#informacao_itens">Serviços</a>
+                            <a class="btn_faleConosco btn btn-link text-decoration-none" href="#informacao_itens">
+                                Serviços
+                            </a>
                               
                         </li>
-                        <li class="nav-item mx-2">
+                        <li class="nav-item">
                             <a asp-action="Segmentos" asp-controller="Home" asp-area=""
-                               class="btn_faleConosco btn btn-link text-decoration-none ps-1">
+                               class="btn_faleConosco btn btn-link text-decoration-none">
                                 Segmentos
 
                             </a>
 
                         </li>
 
-                        <li class="nav-item mx-2">
+                        <li class="nav-item">
                             <a asp-action="Sistemas" asp-controller="Home" asp-area=""
-                               class="btn_faleConosco btn btn-link text-decoration-none ps-1">
+                               class="btn_faleConosco btn btn-link text-decoration-none">
                                 Sistemas
 
                             </a>
                           
                         </li>
-                        <li class="nav-item mx-2">
+                        <li class="nav-item">
                             <a asp-action="sobreNos" asp-controller="Home" asp-area=""
-                                    class="btn_faleConosco btn btn-link text-decoration-none ps-1">
+                                    class="btn_faleConosco btn btn-link text-decoration-none">
                                 Sobre nós
                             </a>
                         </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="#depoimentos">Nossos clientes</a>
+                        <li class="nav-item">
+                            <a asp-action="Index" asp-controller="Home" asp-area="" 
+                                   class="btn btn-link btn_faleConosco text-decoration-none">
+                                Nossos clientes
+                            </a>
                         </li>
-                        <li class="nav-item mx-2">
+                        <li class="nav-item">
                             <a asp-action="Suporte" asp-controller="Home" asp-area=""
-                               class="btn_faleConosco btn btn-link text-decoration-none ps-1">
+                               class="btn_faleConosco btn btn-link text-decoration-none">
                                 Suporte
                             </a>
                           
                                
                         </li>
-                        <li class="nav-item mx-1">
+                        <li class="nav-item">
                             
                                 <a asp-action="" asp-controller="" asp-area="" type="button"
-                                        class="btn_faleConosco btn btn-link text-decoration-none ps-1">
+                                        class="btn_faleConosco btn btn-link text-decoration-none">
                                     Fale Conosco
                                 </a>
                             

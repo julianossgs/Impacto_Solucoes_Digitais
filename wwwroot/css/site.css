@@ -41,7 +41,7 @@ body {
 .nav-link,
 .btn_faleConosco {
     color: var(--color-nav-link) !important;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
     .nav-link:hover,

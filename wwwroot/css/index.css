@@ -241,37 +241,9 @@
     }
 }
 
-
-
-
-/*-----*/
-/*-----*/
-/*.name {
-    border-bottom: 1px solid black;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    bottom: 75px;
-    transform: translateY(-80%);
-    top: 320px;
-    width: 5%;
-    opacity: 2;
-}
-
-.carousel-control-prev {
-    left: -100px;
-   opacity:1;
-  
-    
-}
-
-.carousel-control-next {
-    right: -100px;
-    opacity: 1;
-    
-}*/
 /*------Fim area depoimentos*/
+
+
 /*----Css area suporte---*/
 #suporte {
     background-color: var(--color-bg-suporte);
