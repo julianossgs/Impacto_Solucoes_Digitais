@@ -50,7 +50,7 @@
                                 <p class="mt-3 fs-5 text-light fw-semibold">Fale pelo WhatsApp</p>
 
                             </div>
-                            <a class="text-end text-decoration-none">Designed by Freepik</a>
+                            <p class="freepik lead text-end text-secondary"><small>Designed by Freepik</small></p>
                         </div>
                        
                      </div>
@@ -161,112 +161,57 @@
                 </div>
                       
                 <!--Fim seção informação itens-->
-                <!--Seção Home-->
-               
-                <!--Fim seção Home-->
-            
-              
-              
-                <!--Seção Depoimentos-->
+                
+
+                <!--Inicio seção clientes-->
                 <section>
-                    <div class="container-fluid p-0 mt-1 me-0 ms-0 mb-2" id="depoimentos">
-                        <div class="row justify-content-lg-center justify-content-sm-center p-5 depoimentos">
-                            <div class="col-12 col-md-8 mt-2">
-                                <div class="text-center">
-                                    <h2 class="depto_cliente fs-2 text-uppercase text-light text-opacity-75">Depoimentos</h2>
-                                    <h4 class="titulo_cliente text-light text-opacity-75 mb-3">O que dizem nossos clientes...</h4>
-
+                    <div class="container-fluid clientes">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-8 text-center p-5 mt-5">
+                                <div class="mb-5">
+                                    <i class="bi bi-heart-fill display-3 text-danger"></i>
+                                    <h1 class="fw-bold opacity-75 display-6">Clientes felizes em toda a região!</h1>
+                                    <h4 class="fw-bold opacity-75">Saiba o que nossos clientes pensam sobre nossa empresa.</h4>
                                 </div>
-                                
-                               
+                              
+                                <div class="d-lg-inline-block d-md-block">
+                                    <a asp-action="Clientes" asp-controller="Home" asp-area=""
+                                       class=" btn btn-outline-danger mx-2 my-2 fw-bolder">
+                                        Quero conhecer !
+                                    </a>
+                                    <a asp-action="Clientes" asp-controller="Home" asp-area=""
+                                       class=" btn btn-outline-dark fw-bolder">
+                                        Quero ser um cliente !
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row align-items-end mt-5">
+                                <a class="text-primary text-decoration-none fw-bolder
+                                          icon-link icon-link-hover d-flex" href="#informacao">
+                                    <i class="bi bi-arrow-left"></i>
+                                    Voltar ao topo
+                                </a>
+
                             </div>
 
                             
                         </div>
-                        <div class="row justify-content-start mb-3 mt-3 p-4 scale-up-center">
-                            <div class="col-lg-6 col-md-4 ">
-                                <p class="fs-4 text-secondary fw-bold text-opacity-75 fst-italic text-center">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, 
-                                    justo a pretium luctus, felis ante laoreet ligula, in aliquet lorem nulla id enim.
-                                    Integer ultrices blandit nunc, id semper risus accumsan eget. Sed ornare 
-                                    consectetur nulla, et bibendum purus lobortis vehicula."
-                                    
-                                    
-                                </p>
-                                <figure class="text-end fs-5 text-secondary fw-bold text-opacity-75 
-                                               border-bottom border-secondary border-4">
-                                    <blockquote class="blockquote">
-                                        <p>João Silva.</p>
-                                    </blockquote>
-                                    <figcaption class="blockquote-footer">
-                                        Cliente satisfeito 
-                                    </figcaption>
-                                </figure>
-                                
-                            </div>
-                            
-                        </div>
 
-                        <div class="row justify-content-center mb-3 p-4 scale-up-center">
-                            <div class="col-lg-6 col-md-4">
-                                <p class="text-secondary fw-bolder text-opacity-75 fst-italic fs-4 text-center">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus,
-                                    justo a pretium luctus, felis ante laoreet ligula, in aliquet lorem nulla id enim.
-                                    Integer ultrices blandit nunc, id semper risus accumsan eget. Sed ornare
-                                    consectetur nulla, et bibendum purus lobortis vehicula."
-                                </p>
-                                <figure class="text-end fs-5 text-secondary fw-bold text-opacity-75
-                                                 border-bottom border-secondary border-4">
-                                    <blockquote class="blockquote">
-                                        <p>Maria Silva.</p>
-                                    </blockquote>
-                                    <figcaption class="blockquote-footer">
-                                        Cliente satisfeito
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            
-                        </div>
-                        <div class="row justify-content-end p-4 scale-up-center">
-                            <div class="col-lg-6 col-md-4">
-                                <p class="fs-4 text-secondary fw-bold text-opacity-75 fst-italic text-center">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus,
-                                    justo a pretium luctus, felis ante laoreet ligula, in aliquet lorem nulla id enim.
-                                    Integer ultrices blandit nunc, id semper risus accumsan eget. Sed ornare
-                                    consectetur nulla, et bibendum purus lobortis vehicula."
-                                </p>
-                                <figure class="text-end fs-5 text-secondary fw-bold text-opacity-75
-                                                border-bottom border-secondary border-4">
-                                    <blockquote class="blockquote">
-                                        <p>Marta Silva.</p>
-                                    </blockquote>
-                                    <figcaption class="blockquote-footer">
-                                        Cliente satisfeito
-                                    </figcaption>
-                                </figure>
-                            </div>
-
-                        </div>
                        
                     </div>
-                   
+                    
                 </section>
-                <!--Fim Seção Depoimentos-->
-                <div>
-                    <a class="text-primary text-decoration-none fw-bolder
-                                          icon-link icon-link-hover" href="#informacao">
-                        <i class="bi bi-arrow-left"></i>
-                        Voltar ao topo
-                    </a>
-                </div>
-        </main>
+                <!--Fim seção clientes-->
+
+              
+            </main>
         </div>
         
     </div>
     <!--divs p/ auxiliar na responsividade do footer-->
     <div class="d-block d-md-none" style="height: 650px;"></div>
     <div class="d-none d-md-block d-lg-none" style="height: 230px;"></div>
-    <div class="d-none d-lg-block" style="height: 320px;"></div>
+    <div class="d-none d-lg-block" style="height: 282px;"></div>
 
    
 </div>
