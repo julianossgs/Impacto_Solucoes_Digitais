@@ -3,28 +3,30 @@
     --color-bg-home: #e6e6e6;
     --color-bg-info-itens: #fff;
     --color-bg-info-container: #ddd;
-    --color-bg-info-container-title:#000;
+    --color-bg-info-container-title: #000;
     --color-bg-depoimentos: #00061a;
-    --color-bg-suporte:#fff;
-    --color-btn-zap:#fff;
-    --color-btn-zap-hover:#008000;
-    --color-btn-segmento:#fff;
-    --color-btn-segmento-hover:#000;
-    --color-segmento-item: #fff;
+    --color-bg-suporte: #fff;
+    --color-btn-zap: #fff;
+    --color-btn-zap-hover: #008000;
+    --color-btn-segmento: #fff;
+    --color-btn-segmento-hover: #000;
+    --color_segmento_item_hover:#00001a;
+    --color_bg_segmento_item_hover:#fff;
+    --color-segmento-item: #000033;
     --color-info-itens-list: #000099;
     --color-info-itens-list-hover: #000066;
 }
 
 /*------Seção Home------*/
 #home {
-  
-    background-image:linear-gradient(rgba(0,9,26,0.9),rgba(0,9,26,0.9)),  url('../Img/LOGO_1 - SOMA SOLUÇÕES DIGITAIS - FUNDO BRANCO.png');
+    background-color: #bfbfbf;
+    /*background-color: #d3dee8;*/
+    opacity: 1;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
-   
 }
 
 
@@ -35,19 +37,35 @@
     animation-timing-function: ease;
 }
 
-.btn_segmento{
-    color:var(--color-btn-segmento) !important;
+.btn_segmento {
+    color: var(--color-btn-segmento) !important;
+    background-color: #000080;
 }
 
-.btn_segmento:hover{
+    .btn_segmento:hover {
+        color: #000080 !important;
+        background-color: #fff !important;
+        border: 1px solid #000080;
+    }
 
-    color:var(--color-btn-segmento-hover) !important;
+.segmento_title {
+    color: #000080;
 }
+
 
 .segmento_item {
     color: var(--color-segmento-item);
-    font-size: 1.1rem;
+    font-size: 1rem;
+    border: 2px solid #000033;
+    border-radius:100%;
+    padding:0.7rem;
 }
+
+    .segmento_item:hover {
+        color: var(--color_segmento_item_hover);
+      /*  background-color: var(--color_bg_segmento_item_hover);*/
+        background-color: #19c4e8;
+    }
 
 
 .titulo_p {
@@ -133,6 +151,7 @@
 
 
 /*------Fim seção informação------*/
+
 /*------Seção SobreNos------*/
 #sobrenos {
     background-position: center center;
@@ -635,24 +654,5 @@
    
 }
 
-
-@media (min-width: 768px) {
-    
-}
-
- 
-@media (min-width: 992px) {
-    
-}
-
- 
-@media (min-width: 1200px) {
-    
-}
-
-
-@media (min-width: 1400px) {
-    
-}
 
 
