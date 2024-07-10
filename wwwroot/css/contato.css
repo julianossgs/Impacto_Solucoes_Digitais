@@ -1,0 +1,59 @@
+﻿body {
+    background-color: #f2f2f2;
+}
+
+.contato {
+    background-image: url("../Img/informacao.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    height: auto;
+    margin: 0;
+}
+
+.form_contato{
+    margin-top:80px;
+}
+
+.form_label {
+    color: #000066;
+    font-size: 1.08rem;
+}
+
+.scale-up-bottom {
+    -webkit-animation: scale-up-bottom 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-bottom 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-bottom {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+}
+
+@keyframes scale-up-bottom {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+}

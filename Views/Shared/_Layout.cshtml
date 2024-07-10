@@ -1,4 +1,14 @@
-﻿
+﻿@* @{
+    var viewAtual = ViewContext.RouteData.Values["controller"].ToString();
+    var classeMenuPrincipal = viewAtual == "" ? "#home" : "";
+    var classeMenusobreNos = viewAtual == "sobreNos" ? "#sobreNos" : "";
+    // var classeMenuCategorias = viewAtual == "Categoria" ? "active" : "";
+    // var classeQuemSomos = viewAtual == "Home" ? "active" : "";
+    // var classeFaleConosco = viewAtual == "Home" ? "active" : "";
+    // var classeMenuClientes = viewAtual == "Home" ? "active" : "";
+
+}
+ *@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -53,19 +63,12 @@
                     <ul class="navbar-nav flex-grow-1 justify-content-center">
                         <li class="nav-item fs-6">
                             <a asp-action="Index" asp-controller="Home" asp-area=""
-                                    class="btn_faleConosco btn btn-link text-decoration-none">
+                               class="btn_faleConosco btn btn-link text-decoration-none">
                                 Home
                             </a>
                           
                         </li>
-                        <li class="nav-item">
-                           
-                            <a class="btn_faleConosco btn btn-link text-decoration-none" href="#informacao_itens">
-                                Serviços
-                            </a>
-                              
-                        </li>
-                     
+                       
                         <li class="nav-item">
                             <a asp-action="Sistemas" asp-controller="Home" asp-area=""
                                class="btn_faleConosco btn btn-link text-decoration-none">
@@ -96,7 +99,7 @@
                         </li>
                         <li class="nav-item">
                             
-                                <a asp-action="" asp-controller="" asp-area="" type="button"
+                                <a asp-action="Contato" asp-controller="Contact" asp-area="" type="button"
                                         class="btn_faleConosco btn btn-link text-decoration-none">
                                     Fale Conosco
                                 </a>

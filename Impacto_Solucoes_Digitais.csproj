@@ -10,4 +10,8 @@
     <_ContentIncludedByDefault Remove="wwwroot\Img\depoimento_1.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.7.0" />
+  </ItemGroup>
+
 </Project>
