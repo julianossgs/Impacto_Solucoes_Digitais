@@ -10,8 +10,8 @@
     --color-btn-zap-hover: #008000;
     --color-btn-segmento: #fff;
     --color-btn-segmento-hover: #000;
-    --color_segmento_item_hover:#00001a;
-    --color_bg_segmento_item_hover:#fff;
+    --color_segmento_item_hover: #00001a;
+    --color_bg_segmento_item_hover: #19c4e8;
     --color-segmento-item: #000033;
     --color-info-itens-list: #000099;
     --color-info-itens-list-hover: #000066;
@@ -20,7 +20,6 @@
 /*------Seção Home------*/
 #home {
     background-color: #bfbfbf;
-    /*background-color: #d3dee8;*/
     opacity: 1;
     background-position: center;
     background-size: cover;
@@ -63,8 +62,8 @@
 
     .segmento_item:hover {
         color: var(--color_segmento_item_hover);
-      /*  background-color: var(--color_bg_segmento_item_hover);*/
-        background-color: #19c4e8;
+        background-color: var(--color_bg_segmento_item_hover);
+       
     }
 
 
@@ -147,115 +146,8 @@
     }
 }
 
-
-
-
 /*------Fim seção informação------*/
 
-/*------Seção SobreNos------*/
-#sobrenos {
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width:100%;
-    background-image: url("../Img/capa2.jpg");
-   
-}
-
-.info_container {
-    background-color: var(--color-bg-info-container);
-    opacity: 0.9;
-    animation-name: moverParaCimaInfo_Container;
-    animation-duration: 2.3s;
-    animation-delay: 1s;
-    animation-fill-mode: backwards;
-}
-
-.info_container_title {
-    background-color: var(--color-bg-info-container-title);
-    opacity: 0.8;
-    animation-name: AparecerInfo_Container_title;
-    animation-duration: 2.5s;
-    animation-delay: 1s;
-    animation-fill-mode: backwards;
-}
-
-.kenburns-top {
-    -webkit-animation: kenburns-top 5s ease-out both;
-    animation: kenburns-top 5s ease-out both;
-}
-
-
-/*----Fim Seção SobreNos------*/
-
-
-/*------Css depoimentos------*/
-
-.depoimentos {
-    background-image: url("../Img/informacao.jpg");
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100% !important;
-    height: auto;
-    margin-bottom: 3rem;
-  
-}
-
-
-.depto_cliente {
-    animation-name: moverParaDireita;
-    animation-duration: 4s;
-    animation-delay: 0.5s;
-    animation-fill-mode: backwards;
-}
-
-.titulo_cliente {
-    animation-name: moverParaDireita;
-    animation-duration: 4s;
-    animation-delay: 0.5s;
-    animation-fill-mode: backwards;
-}
-
-.kenburns-top{
-    -webkit-animation: kenburns-top 5s ease-out both;
-    animation: kenburns-top 5s ease-out both;
-}
-
-@-webkit-keyframes kenburns-top {
-    0% {
-        -webkit-transform: scale(1) translateY(0);
-        transform: scale(1) translateY(0);
-        -webkit-transform-origin: 50% 16%;
-        transform-origin: 50% 16%;
-    }
-
-    100% {
-        -webkit-transform: scale(1.25) translateY(-65px);
-        transform: scale(1.25) translateY(-65px);
-        -webkit-transform-origin: top;
-        transform-origin: top;
-    }
-}
-
-@keyframes kenburns-top {
-    0% {
-        -webkit-transform: scale(1) translateY(0);
-        transform: scale(1) translateY(0);
-        -webkit-transform-origin: 50% 16%;
-        transform-origin: 50% 16%;
-    }
-
-    100% {
-        -webkit-transform: scale(1.25) translateY(-65px);
-        transform: scale(1.25) translateY(-65px);
-        -webkit-transform-origin: top;
-        transform-origin: top;
-    }
-}
-
-/*------Fim area depoimentos*/
 
 /*------Seção Clientes------*/
 .clientes{
@@ -264,161 +156,18 @@
     width:100%;
 }
 
-.kenburns-top{
-    -webkit-animation: kenburns-top 5s ease-out both;
-    animation: kenburns-top 5s ease-out both;
-}
-
-@-webkit-keyframes kenburns-top {
-    0% {
-        -webkit-transform: scale(1) translateY(0);
-        transform: scale(1) translateY(0);
-        -webkit-transform-origin: 50% 16%;
-        transform-origin: 50% 16%;
-    }
-
-    100% {
-        -webkit-transform: scale(1.25) translateY(-15px);
-        transform: scale(1.25) translateY(-15px);
-        -webkit-transform-origin: top;
-        transform-origin: top;
-    }
-}
-
-@keyframes kenburns-top {
-    0% {
-        -webkit-transform: scale(1) translateY(0);
-        transform: scale(1) translateY(0);
-        -webkit-transform-origin: 50% 16%;
-        transform-origin: 50% 16%;
-    }
-
-    100% {
-        -webkit-transform: scale(1.25) translateY(-15px);
-        transform: scale(1.25) translateY(-15px);
-        -webkit-transform-origin: top;
-        transform-origin: top;
-    }
-}
-
 /*------Fim Seção Clientes------*/
 
 
 
-/*----Css area suporte---*/
-#suporte {
-    background-color: var(--color-bg-suporte);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100% !important;
-    height: auto;
-    margin: 0;
-}
-
-.suporte_title {
-    background-image: url("../Img/informacao.jpg");
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100% !important;
-    height: 20vh;
-    margin: 0;
-}
-
-.btn_suporte {
-    border: 1px solid;
-    background-color: var(--color-nav-link);
-    color: var(--color-btn-zap);
-}
-
-.btn_suporte:hover {
-    background-color: #fff;
-    color: var(--color-nav-link);
-}
-
-.btn_zap:hover {
-    background-color: var(--color-btn-zap);
-    color: var(--color-btn-zap-hover);
-}
-
-/*------Fim area suporte------*/
-
-
-
-/*----Area Sistemas------*/
-#sistemas {
-    background-image: url("../Img/informacao.jpg");
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100% !important;
-    height: auto;
-    margin: 0;
-}
-
-.sistemas_show {
-  
-    background-position: center;
-    background-size: cover;
-    width: 100% !important;
-    height: auto;
-    margin: 0;
-}
-
-.sistemas_show img{
-    width:200px;
-    position:relative;
-}
-
-.sistemas_icons{
-   
-    color:#000033;
-}
-
-.sistemas_text{
-    color:#000033;
-    font-weight:400;
-}
-
-.scale-up-center{
-    -webkit-animation: scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation:progress 2s ease-in-out;
-    animation-delay:0.5s;
-}
-
-
-
-@-webkit-keyframes scale-up-center {
-    0% {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@keyframes scale-up-center {
-    0% {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
 
 
 
 
 
-/*------Fim area Sistemas------*/
+
+
+
 .titulo_1 {
     animation-name: moverParaDireita;
     animation-duration: 4s;
@@ -568,91 +317,8 @@
 }
 
 
-/*Animação seção sobrenos*/
-@keyframes kenburns-top {
-    0% {
-        -webkit-transform: scale(0.8) translateY(0);
-        transform: scale(0.8) translateY(0);
-        -webkit-transform-origin: 50% 26%;
-        transform-origin: 50% 26%;
-    }
-
-    100% {
-        -webkit-transform: scale(1.04) translateY(0px);
-        transform: scale(1.04) translateY(0px);
-        -webkit-transform-origin: top;
-        transform-origin: top;
-    }
-}
-
-/*Fim animação seçao sobrenós*/
-
-
-/*Animação seção suporte*/
-@-webkit-keyframes tracking-in-expand-fwd {
-    0% {
-        letter-spacing: -0.5em;
-        -webkit-transform: translateZ(-700px);
-        transform: translateZ(-700px);
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 0.6;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-
-@keyframes tracking-in-expand-fwd {
-    0% {
-        letter-spacing: -0.5em;
-        -webkit-transform: translateZ(-700px);
-        transform: translateZ(-700px);
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 0.6;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-/*------Fim animação Seção suporte------*/
-
-
-
-
-
-
-
-
-
-
 /*-----Fim animações------*/
 
-
-
-/*-----Break Points------*/
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-    #home {
-        /*background-image: url("../Img/LOGO - SOMA SOLUÇÕES DIGITAIS - FUNDO BRANCO.png");*/
-        max-height: 100%;
-        min-width: 100%;
-        position: relative;
-        overflow: hidden;
-    }
-   
-}
 
 
 

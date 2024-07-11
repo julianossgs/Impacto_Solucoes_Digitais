@@ -1,0 +1,98 @@
+﻿.depoimentos {
+    background-image: url("../Img/informacao.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+
+.depto_cliente {
+    animation-name: moverParaDireita;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.titulo_cliente {
+    animation-name: moverParaDireita;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+
+
+
+
+.scale-in-hor-center {
+    -webkit-animation: scale-in-hor-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-hor-center {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-hor-center {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+
+
+.scale-in-hor-center-2 {
+    -webkit-animation: scale-in-hor-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay:3.5s;
+}
+
+@-webkit-keyframes scale-in-hor-center-2 {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-hor-center-2 {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+

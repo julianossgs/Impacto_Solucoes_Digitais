@@ -1,0 +1,38 @@
+﻿
+
+
+#suporte {
+    background-color: var(--color-bg-suporte);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    height: auto;
+    margin: 0;
+}
+
+.suporte_title {
+    background-image: url("../Img/informacao.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    height: 20vh;
+    margin: 0;
+}
+
+.btn_suporte {
+    border: 1px solid;
+    background-color: var(--color-nav-link);
+    color: var(--color-btn-zap);
+}
+
+.btn_suporte:hover {
+        background-color: #fff;
+        color: var(--color-nav-link);
+}
+
+.btn_zap:hover {
+    background-color: var(--color-btn-zap);
+    color: var(--color-btn-zap-hover);
+}
