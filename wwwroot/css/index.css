@@ -8,10 +8,9 @@
     --color-bg-suporte: #fff;
     --color-btn-zap: #fff;
     --color-btn-zap-hover: #008000;
-    --color-btn-segmento: #fff;
-    --color-btn-segmento-hover: #000;
-    --color_segmento_item_hover: #00001a;
-    --color_bg_segmento_item_hover: #19c4e8;
+    --color-btn-segmento-item: #000033;
+    --color-btn-segmento-item-hover: #000;
+    
     --color-segmento-item: #000033;
     --color-info-itens-list: #000099;
     --color-info-itens-list-hover: #000066;
@@ -19,7 +18,7 @@
 
 /*------Seção Home------*/
 #home {
-    background-color: #bfbfbf;
+    background-color: #f2f2f2;
     opacity: 1;
     background-position: center;
     background-size: cover;
@@ -29,50 +28,22 @@
 }
 
 
-.segmento {
-   
-    animation-name: moverSegmentos;
-    animation-duration: 2.2s;
-    animation-timing-function: ease;
+.btn_segmento_item {
+    color:var(--color-btn-segmento-item);
+    background-color: transparent;
+    border: none;
 }
 
-.btn_segmento {
-    color: var(--color-btn-segmento) !important;
-    background-color: #000080;
-}
-
-    .btn_segmento:hover {
-        color: #000080 !important;
-        background-color: #fff !important;
-        border: 1px solid #000080;
+    .btn_segmento_item:hover {
+        color: #000033;
+        border-bottom: 1px solid #000033;
+        background-color: transparent;
     }
 
-.segmento_title {
-    color: #000080;
-}
-
-
-.segmento_item {
-    color: var(--color-segmento-item);
-    font-size: 1rem;
-    border: 2px solid #000033;
-    border-radius:100%;
-    padding:0.7rem;
-}
-
-    .segmento_item:hover {
-        color: var(--color_segmento_item_hover);
-        background-color: var(--color_bg_segmento_item_hover);
-       
+    .segmento_title {
+        color: #000033;
     }
 
-
-.titulo_p {
-    animation-name: moverParaCima;
-    animation-duration: 2.5s;
-    animation-delay: 1s;
-    animation-fill-mode: backwards;
-}
 
 /*------Fim Seção Home------*/
 
