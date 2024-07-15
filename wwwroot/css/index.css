@@ -117,6 +117,15 @@
     }
 }
 
+.cookies {
+    background-color: #fff;
+    background-position: center;
+    background-size:initial;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    height: 10vh;
+}
+
 /*------Fim seção informação------*/
 
 
