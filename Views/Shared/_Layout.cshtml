@@ -1,14 +1,14 @@
-﻿@* @{
-    var viewAtual = ViewContext.RouteData.Values["controller"].ToString();
-    var classeMenuPrincipal = viewAtual == "" ? "#home" : "";
-    var classeMenusobreNos = viewAtual == "sobreNos" ? "#sobreNos" : "";
-    // var classeMenuCategorias = viewAtual == "Categoria" ? "active" : "";
-    // var classeQuemSomos = viewAtual == "Home" ? "active" : "";
-    // var classeFaleConosco = viewAtual == "Home" ? "active" : "";
-    // var classeMenuClientes = viewAtual == "Home" ? "active" : "";
+﻿@{
+    var controllerAtual = ViewContext.RouteData.Values["action"].ToString();
+    var classeMenuPrincipal = controllerAtual == "Index" ? "active" : "";
+    var classeMenuSistemas = controllerAtual == "Sistemas" ? "active" : "";
+    var classeMenuSobreNos = controllerAtual == "SobreNos" ? "active" : "";
+    var classeMenuClientes = controllerAtual == "Clientes" ? "active" : "";
+    var classeMenuSuporte = controllerAtual == "Suporte" ? "active" : "";
+    var classeMenuContato = controllerAtual == "Contato" ? "active" : "";
 
 }
- *@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -61,46 +61,46 @@
                 
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1 justify-content-center">
-                        <li class="nav-item fs-6">
+                        <li class="nav-item mx-1">
                             <a asp-action="Index" asp-controller="Home" asp-area=""
-                               class="btn_faleConosco btn btn-link text-decoration-none">
+                               class="nav-link text-decoration-none pb-0 @classeMenuPrincipal">
                                 Home
                             </a>
                           
                         </li>
                        
-                        <li class="nav-item">
+                        <li class="nav-item mx-1">
                             <a asp-action="Sistemas" asp-controller="Home" asp-area=""
-                               class="btn_faleConosco btn btn-link text-decoration-none">
+                               class="nav-link text-decoration-none pb-0 @classeMenuSistemas">
                                 Sistemas
 
                             </a>
                           
                         </li>
-                        <li class="nav-item">
-                            <a asp-action="sobreNos" asp-controller="Home" asp-area=""
-                                    class="btn_faleConosco btn btn-link text-decoration-none">
+                        <li class="nav-item mx-1">
+                            <a asp-action="SobreNos" asp-controller="Home" asp-area=""
+                               class="nav-link text-decoration-none pb-0 @classeMenuSobreNos">
                                 Sobre nós
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a asp-action="Clientes" asp-controller="Home" asp-area="" 
-                                   class="btn btn-link btn_faleConosco text-decoration-none">
+                        <li class="nav-item mx-1">
+                            <a asp-action="Clientes" asp-controller="Home" asp-area=""
+                               class="nav-link text-decoration-none pb-0 @classeMenuClientes">
                                 Nossos clientes
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-1">
                             <a asp-action="Suporte" asp-controller="Home" asp-area=""
-                               class="btn_faleConosco btn btn-link text-decoration-none">
+                               class="nav-link text-decoration-none pb-0 @classeMenuSuporte">
                                 Suporte
                             </a>
                           
                                
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-1">
                             
                                 <a asp-action="Contato" asp-controller="Contact" asp-area="" type="button"
-                                        class="btn_faleConosco btn btn-link text-decoration-none">
+                               class="nav-link text-decoration-none pb-0 @classeMenuContato">
                                     Fale Conosco
                                 </a>
                             
