@@ -19,40 +19,47 @@
         </div>
         <p class="freepik lead text-end text-secondary"><small>Designed by Freepik</small></p>
     </div>
+
+    
     <div class="row justify-content-center form_contato">
+        <div class="row justify-content-center mt-3 mb-4">
+            <h2 class="form_contato_title text-center">Tire suas dúvidas.</h2>
 
-            <div class="col-lg-8 shadow p-3 mb-5 mt-5">
+        </div>
+        
 
-            <form class="row justify-content-center bg-body-tertiary rounded" autocomplete="off" method="post" 
-                          asp-controller="Contact" asp-action="SendContato">
-                    <div class="col-md-5 mb-3">
-                        <label asp-for="Nome" class="form_label form-label">Nome</label>
-                        <span class="text-danger h5"><strong> * </strong></span>
-                        <input asp-for="Nome" type="text" class="form-control" id="nome"
-                               placeholder="seu nome...">
-                        <span class="text-danger" asp-validation-for="Nome"></span>
-                    </div>
-                    <div class="col-md-5 mb-3">
-                        <label asp-for="Email" class="form_label form-label">Email</label>
-                        <span class="text-danger h5"><strong> * </strong></span>
-                        <input asp-for="Email" type="email" class="form-control" id="email"
-                               placeholder="seu email...">
-                        <span class="text-danger" asp-validation-for="Email"></span>
-                    </div>
-                    <div class="col-md-10 mb-5">
-                        <label asp-for="Message" class="form_label form-label">Mensagem</label>
-                        <span class="text-danger h5"><strong> * </strong></span>
-                        <textarea asp-for="Message" class="form-control" id="msg" rows="5"
-                                  placeholder="escreva sua mensagem..."></textarea>
-                        <span class="text-danger" asp-validation-for="Message"></span>
-                    </div>
-                    <div class="col-md-10 mt-2 text-center">
+            <div class="col-lg-8 shadow p-3 mb-5 mt-0">
+
+                <form class="row justify-content-center bg-body-tertiary rounded" autocomplete="off" method="post" 
+                              asp-controller="Contact" asp-action="SendContato">
+                        <div class="col-md-5 mb-3">
+                            <label asp-for="Nome" class="form_label form-label">Nome</label>
+                            <span class="text-danger h5"><strong> * </strong></span>
+                            <input asp-for="Nome" type="text" class="form-control" id="nome"
+                                   placeholder="seu nome..." required>
+                            <span class="text-danger" asp-validation-for="Nome"></span>
+                        </div>
+                        <div class="col-md-5 mb-3">
+                            <label asp-for="Email" class="form_label form-label">Email</label>
+                            <span class="text-danger h5"><strong> * </strong></span>
+                            <input asp-for="Email" type="email" class="form-control" id="email"
+                                   placeholder="seu email..." required>
+                            <span class="text-danger" asp-validation-for="Email"></span>
+                        </div>
+                        <div class="col-md-10 mb-5">
+                            <label asp-for="Message" class="form_label form-label">Mensagem</label>
+                            <span class="text-danger h5"><strong> * </strong></span>
+                            <textarea asp-for="Message" class="form-control" id="msg" rows="5"
+                                      placeholder="escreva sua mensagem..." required></textarea>
+                            <span class="text-danger" asp-validation-for="Message"></span>
+                        </div>
+                        <div class="col-md-10 mt-2 text-center">
                     
-                        <input type="submit" class="btn btn-outline-primary ps-3 pe-3 rounded-pill fw-bolder w-50" 
-                        value="Enviar mensagem" />
+                            <input type="submit" class="btn btn-outline-primary ps-3 pe-3 rounded-pill fw-bolder w-50" 
+                            value="Enviar mensagem" />
                     
-                    </div>
-                </form>
+                        </div>
+                    </form>
 
             </div>
        
