@@ -16,6 +16,13 @@
     margin-top:80px;
 }
 
+.form_contato_title{
+    color:#000080;
+    border-bottom:1px solid #000080;
+    width:50%;
+    
+}
+
 .form_label {
     color: #000066;
     font-size: 1.08rem;
