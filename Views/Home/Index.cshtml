@@ -19,7 +19,7 @@
                 <section>
                     <div class="container-fluid informacao" id="informacao">
                         <div class="row justify-content-center d-flex">
-                            <div class="col-lg-8 col-md-8 col-sm-6">
+                            <div class="col-lg-8 col-md-8 col-sm-6 ">
                                      
                                 <h2 class="text-center display-4 text-light fw-semibold">
                                     <strong>
@@ -38,15 +38,12 @@
                         </div>
                         <div class="row justify-content-center p-3 my-2">
                             <div class="col-sm-12 col-md-12 col-lg-12 text-center">
-                                <button asp-action="" asp-controller="" asp-area="" type="button" 
-                                class="btn_zap btn btn-success rounded-pill">
-                                        
-                                    <i class="bi bi-whatsapp mx-1 fst-normal">
-                                        (35)98898-1198
-                                    </i>
-                                    
-
-                                </button>
+                                <a href="https://api.whatsapp.com/send?phone=5535988981198&text=Ol%C3%A1%2C%20gostaria%20de%20um%20atendimento." target="_blank"
+                                   class="btn_zap btn btn-success rounded-pill fw-bolder">
+                                    <i class="bi bi-whatsapp mx-1"></i>
+                                    (35)98898-1198
+                                </a>
+                              
                                 <p class="mt-3 fs-5 text-light fw-semibold">Fale pelo WhatsApp</p>
 
                             </div>
@@ -54,30 +51,25 @@
                            
                         </div>
 
-                        <div class="row justify-content-center fixed-bottom mb-0">
-                            <div class="col-10 alert alert-warning alert-dismissible fade show" role="alert" id="c1">
-                                <div class="">
-                                    <p class="text-center fs-6 p-2 fw-bolder">
-                                        Nós usamos cookies e outras tecnologias semelhantes para melhorar a experiência
-                                        de navegação.Ao continuar navegando,você concorda com a nossa 
-                                        <a class="text-decoration-none" asp-action="Privacidade" asp-controller="Home" asp-area="">política de privacidade.</a>
-                                    </p>
-                                   
-                                </div>
-                                <div class="text-center">
-                                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="alert" aria-label="Close">
-                                        Concordo
-                                    </button>
-                                </div>
-                               
-                               
+                        <!--Seção Cookies-->
+                        <div class="row text-center p-3 rounded fixed-bottom mb-1 cookies-msg"
+                             style="background-color:#8c8c8c" id="cookies-msg">
+                            <div>
+                                <p class="text-center fs-5 fw-bolder">
+                                    Nós usamos cookies e outras tecnologias semelhantes para melhorar a experiência
+                                    de navegação.Ao continuar navegando,você concorda com a nossa
+                                    <a class="text-decoration-none" asp-action="Privacidade" asp-controller="Home" asp-area="">política de privacidade.</a>
+                                </p>
+                            </div>
+                            <div>
+                                <button onclick="aceito()" class="btn btn-primary btn-cookies">
+                                    Concordo
+                                </button>
                             </div>
 
                         </div>
+                        <!--Fim Seção Cookies-->
 
-                      
-
-                       
                      </div>
                      
                     
@@ -424,6 +416,9 @@
         </div>
         
     </div>
+
+   
+
     <!--divs p/ auxiliar na responsividade do footer-->
     <div class="d-block d-md-none" style="height: 690px;"></div>
     <div class="d-none d-md-block d-lg-none" style="height: 230px;"></div>
