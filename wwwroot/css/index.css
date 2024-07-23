@@ -45,6 +45,12 @@
     }
 
 
+.btn_zap:hover {
+    background-color: var(--color-btn-zap);
+    color: var(--color-btn-zap-hover);
+}
+
+
 /*------Fim Seção Home------*/
 
 
@@ -71,10 +77,9 @@
    
 }
 
-.btn_zap:hover {
-    background-color: var(--color-btn-zap);
-    color: var(--color-btn-zap-hover);
-}
+
+
+
 
 .informacao_itens_list {
     color: var(--color-info-itens-list);
@@ -141,19 +146,38 @@
 
 
 
+/*-----Seção Cookies------*/
 
-
-
-
-
-
-
-.titulo_1 {
-    animation-name: moverParaDireita;
-    animation-duration: 4s;
-    animation-delay: 0.5s;
-    animation-fill-mode: backwards;
+.cookies-msg{
+    display:none;
+    opacity: 0.9;
+    border-radius:10px;
+    
 }
+
+.cookies-msg.mostrar {
+        display: block;
+}
+
+.btn-cookies{
+    padding:8px 30px;
+    transition: .2s;
+}
+
+.btn-cookies:hover{
+    transform:scale(0.9);
+}
+
+/*------Fim Seção Cookies------*/
+
+
+
+    .titulo_1 {
+        animation-name: moverParaDireita;
+        animation-duration: 4s;
+        animation-delay: 0.5s;
+        animation-fill-mode: backwards;
+    }
 
 .p_1{
     animation-name: moverParaEsquerda;
