@@ -92,35 +92,7 @@
         
     }
 
-.scale-up-center:hover {
-    -webkit-animation: scale-up-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  
-}
 
-@-webkit-keyframes scale-up-center {
-    0% {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@keyframes scale-up-center {
-    0% {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
 
 .cookies {
     background-color: #fff;
@@ -172,20 +144,7 @@
 
 
 
-    .titulo_1 {
-        animation-name: moverParaDireita;
-        animation-duration: 4s;
-        animation-delay: 0.5s;
-        animation-fill-mode: backwards;
-    }
-
-.p_1{
-    animation-name: moverParaEsquerda;
-    animation-duration: 3.5s;
-    animation-delay: 0.5s;
-    animation-fill-mode: backwards;
-}
-
+ 
 
 /*----Css créditos da freepik------*/
 .freepik{
@@ -199,129 +158,6 @@
 
 
 
-
-
-/*-----Animações CSS------*/
-/*animação títuto*/
-@keyframes moverParaDireita {
-    0%{
-        opacity:0;
-        transform:translateX(-60px);
-    }
-
-    100%{
-        opacity:1;
-        transform:translateX(0);
-    }
-
-}
-
-@-webkit-keyframes tracking-in-expand {
-    0% {
-        letter-spacing: -0.5em;
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 0.6;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes tracking-in-expand {
-    0% {
-        letter-spacing: -0.5em;
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 0.6;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes moverParaEsquerda{
-    0% {
-        opacity: 0;
-        transform: translateX(60px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes moverParaCima {
-    0% {
-        opacity: 0;
-        transform:translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform:translateY(0);
-    }
-}
-
-@keyframes moverSegmentos{
-   
-    0%{
-        transform:translateY(300px);
-    }
-
-   
-}
-
-@keyframes moverParaCimaInfo_Container {
-    0% {
-        opacity: 0;
-        transform: translateY(80px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes AparecerInfo_Container_title {
-    0% {
-        opacity: 0;
-        
-    }
-
-    100% {
-        opacity: 1;
-        
-    }
-}
-
-
-@-webkit-keyframes kenburns-top {
-    0% {
-        -webkit-transform: scale(0.8) translateY(0);
-        transform: scale(0.8) translateY(0);
-        -webkit-transform-origin: 50% 16%;
-        transform-origin: 50% 16%;
-    }
-
-    100% {
-        -webkit-transform: scale(1.04) translateY(-15px);
-        transform: scale(1.04) translateY(-15px);
-        -webkit-transform-origin: top;
-        transform-origin: top;
-    }
-}
-
-
-/*-----Fim animações------*/
 
 
 
