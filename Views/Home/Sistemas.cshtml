@@ -4,6 +4,8 @@
 
 <head>
     <title>@ViewData["Title"] - Soma Solucoes Digitais</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="~/css/sistema.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -100,8 +102,9 @@
    <section>
        <div class="container-fluid">
             <div class="row">
-                <div class="sistemas_show col-xl-2 col-lg-2 d-lg-flex d-md-block align-items-stretch">
-                    <div class="sistemas_show_1 card text-center shadow bg-body-tertiary rounded m-4 scale-up-center">
+                <div class="sistemas_show col-xl-2 col-lg-2 d-lg-flex d-md-block align-items-stretch"
+                     data-aos="zoom-in" data-aos-easing="linear" data-aos-delay="400">
+                    <div class="sistemas_show_1 card text-center shadow bg-body-tertiary rounded m-4">
                         <div>
                             <img src="~/Img/clippFacil.png" class="card-img-top img-fluid" alt="" />
                         </div>
@@ -123,7 +126,7 @@
                         </div>
 
                     </div>
-                    <div class="card text-center shadow bg-body-tertiary rounded m-4 scale-up-center">
+                    <div class="card text-center shadow bg-body-tertiary rounded m-4">
                         <div>
                             <img src="~/Img/clipp360.png" class="card-img img-fluid" alt="" />
                         </div>
@@ -145,8 +148,9 @@
 
                     </div>
                 </div>
-                <div class="sistemas_show col-xl-2 col-lg-2 d-lg-flex d-md-block align-items-stretch">
-                    <div class="card text-center shadow bg-body-tertiary rounded m-4 scale-up-center">
+                <div class="sistemas_show col-xl-2 col-lg-2 d-lg-flex d-md-block align-items-stretch"
+                     data-aos="zoom-in" data-aos-delay="400" data-aos-easing="linear">
+                    <div class="card text-center shadow bg-body-tertiary rounded m-4">
                         <div>
                             <img src="~/Img/clippPro.png" class="card-img-top img-fluid" alt="" />
                         </div>
@@ -167,7 +171,7 @@
                         </div>
 
                     </div>
-                    <div class="card text-center shadow bg-body-tertiary rounded m-4 scale-up-center">
+                    <div class="card text-center shadow bg-body-tertiary rounded m-4">
                         <div>
                             <img src="~/Img/clippCheff.png" class="card-img img-fluid" alt="" />
                         </div>
@@ -190,8 +194,9 @@
 
                     </div>
                 </div>
-                <div class="sistemas_show col-xl-2 col-lg-2 d-lg-flex d-md-block align-items-stretch">
-                    <div class="card text-center shadow bg-body-tertiary rounded m-4 scale-up-center">
+                <div class="sistemas_show col-xl-2 col-lg-2 d-lg-flex d-md-block align-items-stretch"
+                     data-aos="zoom-in" data-aos-delay="400" data-aos-easing="linear">
+                    <div class="card text-center shadow bg-body-tertiary rounded m-4">
                         <div>
                             <img src="~/Img/clippMei.png" class="card-img-top img-fluid" alt="" />
                         </div>
@@ -211,7 +216,7 @@
                         </div>
 
                     </div>
-                    <div class="card text-center shadow bg-body-tertiary rounded m-4 p-5 scale-up-center">
+                    <div class="card text-center shadow bg-body-tertiary rounded m-4 p-5">
                         <div>
                             <img src="~/Img/clippService.png" class="card-img img-fluid" alt="" />
                         </div>
@@ -249,4 +254,15 @@
     <div class="d-block d-md-none" style="height: 650px;"></div>
     <div class="d-none d-md-block d-lg-none" style="height: 290px;"></div>
     <div class="d-none d-lg-block" style="height: 290px;"></div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+           duration:1000
+        }
+        
+        );
+    </script>
 </body>
+
