@@ -14,4 +14,3 @@ else {
     msgCookies.classList.add('mostrar');
 }
 
-/*------Fim código Cookies------ */
