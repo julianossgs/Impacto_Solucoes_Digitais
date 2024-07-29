@@ -1,7 +1,18 @@
+using Impacto_Solucoes_Digitais.Filters;
+using Impacto_Solucoes_Digitais.Logging;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//habilitando o serviço de log
+builder.Services.AddScoped<LogginFilter>();
+
+builder.Logging.AddProvider(new CustomLoggerProvider(new CustomLoggerProviderConfiguration
+{
+    LogLevel = LogLevel.Information
+}));
 
 var app = builder.Build();
 
