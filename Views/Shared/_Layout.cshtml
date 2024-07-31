@@ -2,7 +2,7 @@
     var controllerAtual = ViewContext.RouteData.Values["action"].ToString();
     var classeMenuPrincipal = controllerAtual == "Index" ? "active" : "";
     var classeMenuSistemas = controllerAtual == "Sistemas" ? "active" : "";
-    var classeMenuSobreNos = controllerAtual == "SobreNos" ? "active" : "";
+    // var classeMenuSobreNos = controllerAtual == "SobreNos" ? "active" : "";
     var classeMenuClientes = controllerAtual == "Clientes" ? "active" : "";
     var classeMenuSuporte = controllerAtual == "Suporte" ? "active" : "";
     var classeMenuContato = controllerAtual == "Contato" ? "active" : "";
@@ -60,46 +60,41 @@
                 
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1 justify-content-center">
-                        <li class="nav-item mx-1">
+                        <li class="nav-item mx-2">
                             <a asp-action="Index" asp-controller="Home" asp-area=""
-                               class="nav-link text-decoration-none pb-0 @classeMenuPrincipal">
+                               class="nav-link text-decoration-none pb-0 fs-5 @classeMenuPrincipal">
                                 Home
                             </a>
                           
                         </li>
                        
-                        <li class="nav-item mx-1">
+                        <li class="nav-item mx-2">
                             <a asp-action="Sistemas" asp-controller="Home" asp-area=""
-                               class="nav-link text-decoration-none pb-0 @classeMenuSistemas">
+                               class="nav-link text-decoration-none pb-0 fs-5 @classeMenuSistemas">
                                 Sistemas
 
                             </a>
                           
                         </li>
-                        <li class="nav-item mx-1">
-                            <a asp-action="SobreNos" asp-controller="Home" asp-area=""
-                               class="nav-link text-decoration-none pb-0 @classeMenuSobreNos">
-                                Sobre nós
-                            </a>
-                        </li>
-                        <li class="nav-item mx-1">
+                        
+                        <li class="nav-item mx-2">
                             <a asp-action="Clientes" asp-controller="Home" asp-area=""
-                               class="nav-link text-decoration-none pb-0 @classeMenuClientes">
+                               class="nav-link text-decoration-none pb-0 fs-5 @classeMenuClientes">
                                 Nossos clientes
                             </a>
                         </li>
-                        <li class="nav-item mx-1">
+                        <li class="nav-item mx-2">
                             <a asp-action="Suporte" asp-controller="Home" asp-area=""
-                               class="nav-link text-decoration-none pb-0 @classeMenuSuporte">
+                               class="nav-link text-decoration-none pb-0 fs-5 @classeMenuSuporte">
                                 Suporte
                             </a>
                           
                                
                         </li>
-                        <li class="nav-item mx-1">
+                        <li class="nav-item mx-2">
                             
                                 <a asp-action="Contato" asp-controller="Contact" asp-area="" type="button"
-                               class="nav-link text-decoration-none pb-0 @classeMenuContato">
+                               class="nav-link text-decoration-none pb-0 fs-5 @classeMenuContato">
                                     Fale Conosco
                                 </a>
                             
@@ -116,6 +111,7 @@
            
         </main>
     </div>
+
    
     <footer class="border-top text-muted">
         <div class="container-fluid footer">
@@ -204,13 +200,22 @@
                    
                    
                 </div>
+               
 
             </div>
 
         </div>
+        <!--Link Top-->
+        <a id="link-top" class="text-decoration-none fw-bolder
+            icon-link icon-link-hover" href="#">
+           
+            &xwedge;
+            
+            
+        </a>
+       
     </footer>
-
-    
+   
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
