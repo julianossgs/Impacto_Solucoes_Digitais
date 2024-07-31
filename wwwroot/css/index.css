@@ -116,15 +116,29 @@
 /*------Fim Seção Clientes------*/
 
 
+/*------Quem Somos------*/
+#quemSomos {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../Img/quemSomos_2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+   
+}
+
+.quemSomos_content {
+    color: #fff;
+}
+/*------Fim Quem Somos------*/
 
 
 /*-----Seção Cookies------*/
-
-.cookies-msg{
-    display:none;
+.cookies-msg {
+    display: none;
     opacity: 0.9;
-    border-radius:10px;
-    
+    border-radius: 10px;
 }
 
 .cookies-msg.mostrar {

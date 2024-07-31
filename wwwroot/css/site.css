@@ -73,3 +73,23 @@ body {
     background-repeat: no-repeat;
 }
 
+
+/*Css botão link top*/
+#link-top {
+    background-color: #1a1aff;
+    border-radius: 50%;
+    padding: 15px;
+    position: fixed;
+    color: #fff;
+    right: 25px;
+    bottom: 30px;
+    z-index: 1;
+    opacity: 6;
+    font-weight: 900;
+    box-shadow: 2px 2px 4px #333;
+    font-size:17px;
+}
+
+#link-top:hover {
+        transform: scale(0.9);
+}
